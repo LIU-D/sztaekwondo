@@ -33,7 +33,7 @@
 					<th width="80">图片ID</th>
 					<th width="100">图片分类</th>
 					<th width="100">缩略图</th>
-					<th>标题</th>
+					<th>姓名</th>
 					<th width="150">Tags</th>
 					<th width="150">更新时间</th>
 					<th width="60">发布状态</th>
