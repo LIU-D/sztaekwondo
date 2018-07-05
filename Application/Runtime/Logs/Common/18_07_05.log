@@ -1,0 +1,30 @@
+[ 2018-07-05T09:30:40+08:00 ] 127.0.0.1 /taiquandao/Public/Home/css/loading.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-05T09:30:40+08:00 ] 127.0.0.1 /taiquandao/Public/Home/images/l-r-arrows.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-05T09:33:06+08:00 ] 127.0.0.1 /taiquandao/Public/Home/css/loading.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-05T09:33:07+08:00 ] 127.0.0.1 /taiquandao/Public/Home/images/l-r-arrows.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-05T09:37:46+08:00 ] 127.0.0.1 /taiquandao/showList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001052s ]
+ERR: 无法加载模块:ShowList
+

@@ -161,7 +161,7 @@
                     <div class="sale-box"><span class="on_sale title_shop">左测试</span></div>
                     <div class="price">
 					   <div class="cart-left">
-							<p class="title">A White Bear</p>
+							<p class="title">一只白熊</p>
 							<div class="price1">
 							  <span class="actual">2018-3-13</span>
 							</div>
@@ -180,7 +180,7 @@
 					</div>
                     <div class="price">
 					   <div class="cart-left">
-							<p class="title">A White Bear also</p>
+							<p class="title">另一只白熊</p>
 							<div class="price1">
 							  <span class="actual">2017-12-22</span>
 							</div>
@@ -200,7 +200,7 @@
                     <div class="sale-box1"><span class="on_sale title_shop">右测试</span></div>	
                     <div class="price">
 					   <div class="cart-left">
-							<p class="title">Anothor White Bear</p>
+							<p class="title">另外一只白熊</p>
 							<div class="price1">
 							  <!--<span class="reducedfrom">$66.00</span>-->
 							  <span class="actual">2017-10-5</span>
