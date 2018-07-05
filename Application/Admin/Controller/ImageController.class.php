@@ -5,7 +5,7 @@ class ImageController extends Controller {
     public function index(){
         // $this->display();
     }
-    public function addSlide(){
+    public function addImage(){
         $this->display();
     }
 
