@@ -1,77 +1,94 @@
-<!DOCTYPE HTML>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
 <html>
 <head>
-<title>404</title>
+<title>Article</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="__PUBLIC__/Home/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/taiquandao/Public/Home/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'> -->
-<script type="text/javascript" src="__PUBLIC__/Home/js/jquery1.min.js"></script>
+<script type="text/javascript" src="js/jquery1.min.js"></script>
 <!-- start menu -->
-<link href="__PUBLIC__/Home/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="__PUBLIC__/Home/js/megamenu.js"></script>
+<link href="/taiquandao/Public/Home/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/megamenu.js"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
-<script src="__PUBLIC__/Home/js/jquery.easydropdown.js"></script>
+<script src="/taiquandao/Public/Home/js/jquery.easydropdown.js"></script>
 </head>
 <body>
-	<div class="header-top">
-		<div class="wrap">
-			<div class="header-top-left">
-				<div class="box">
-					<select tabindex="4" class="dropdown">
-						<option value="" class="label" value="">Language :</option>
-						<option value="1">English</option>
-						<option value="2">French</option>
-						<option value="3">German</option>
-					</select>
-				</div>
-	
-				<div class="clear"></div>
-			</div>
-			<div class="cssmenu">
-				<ul>
-					<li><a href="login.html">管理员登陆</a></li>
-					<!--<li><a href="register.html">Sign Up</a></li>-->
-				</ul>
-			</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-	<div class="header-bottom">
-		<div class="wrap">
-			<div class="header-bottom-left">
-				<div class="logo">
-					<a href="index.html"><img src="__PUBLIC__/Home/images/logo.png" alt=""/></a>
-				</div>
-				<div class="menu">
-					<ul class="megamenu skyblue">
-						<!--导航-->
-						<li class="active grid"><a href="{:U('Index/index')}">首页</a></li>
-						<li><a class="color6" href="{:U('Index/showList')}">资讯</a></li>
-                		<li><a class="color6" href="{:U('Index/about')}">关于我们</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="header-bottom-right">
-				<div class="search">
-					<input type="text" name="s" class="textbox" value="Search" onFocus="this.value = '';"
-						   onBlur="if (this.value == '') {this.value = 'Search';}">
-					<input type="submit" value="Subscribe" id="submit" name="submit">
-					<div id="response"></div>
-				</div>
-	
-	
-			</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-    <div class="login">
-       <div class="wrap">
-	      <div class="page-not-found">
-			<h1>404</h1>
-		  </div>
-        </div> 
+<div class="header-top">
+    <div class="wrap">
+        <div class="header-top-left">
+            <div class="box">
+                <select tabindex="4" class="dropdown">
+                    <option value="" class="label" value="">Language :</option>
+                    <option value="1">English</option>
+                    <option value="2">French</option>
+                    <option value="3">German</option>
+                </select>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+        <div class="cssmenu">
+            <ul>
+                <li><a href="login.html">管理员登陆</a></li>
+                <!--<li><a href="register.html">Sign Up</a></li>-->
+            </ul>
+        </div>
+        <div class="clear"></div>
     </div>
+</div>
+<div class="header-bottom">
+    <div class="wrap">
+        <div class="header-bottom-left">
+            <div class="logo">
+                <a href="index.html"><img src="/taiquandao/Public/Home/images/logo.png" alt=""/></a>
+            </div>
+            <div class="menu">
+                <ul class="megamenu skyblue">
+                    <!--导航-->
+                    <li class="active grid"><a href="<?php echo U('Index/index');?>">首页</a></li>
+					<li><a class="color6" href="<?php echo U('Index/showList');?>">资讯</a></li>
+                	<li><a class="color6" href="<?php echo U('Index/about');?>">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-bottom-right">
+            <div class="search">
+                <input type="text" name="s" class="textbox" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}">
+                <input type="submit" value="Subscribe" id="submit" name="submit">
+                <div id="response"> </div>
+            </div>
+
+
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<!--轮播图-->
+    <div class="login">
+     <div class="wrap">
+	    <ul class="breadcrumb breadcrumb__t"><a class="home" href="#">Home</a>  / Article</ul>
+
+
+
+
+
+
+
+
+         <!--文章内容-->
+        <div class="article_title">
+            <h5 class="m_6" align="center"><p><?php echo ($article_list["article_title"]); ?></p></h5>
+            <h3 class="m_6" align="center">
+                <span>创建时间：</span><span><?php echo ($article_list["article_addtime"]); ?></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>发布时间：</span><span><?php echo ($article_list["article_pubtime"]); ?></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>作者：</span><span><?php echo ($article_list["article_author"]); ?></span>
+            </h3>
+            <div class="article_content"><?php echo htmlspecialchars_decode($article_list.article_content);?></div>
+
+        </div>
+	</div>	
+   </div>  
     <div class="footer">
         <div class="footer-middle">
 			<div class="wrap">
@@ -165,7 +182,7 @@
 					<li class="active"><a href="about.html">About Us</a></li> |
 					<li><a href="delivery.html">Delivery & Returns</a></li> |
 					<li><a href="delivery.html">Terms & Conditions</a></li> |
-					<li><a href="#">Contact Us</a></li> 
+					<li><a href="contact.html">Contact Us</a></li> 
 				</ul>
 				</div>
 				<div class="clear"></div>

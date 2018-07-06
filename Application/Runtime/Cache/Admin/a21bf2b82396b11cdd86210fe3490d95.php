@@ -24,7 +24,7 @@
 <![endif]-->
 <!--/meta 作为公共模版分离出去-->
 
-<title>新增文章 - 资讯管理</title>
+<title>编辑文章 - 资讯管理</title>
 </head>
 <body>
 <article class="page-container">
@@ -32,21 +32,13 @@
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>文章标题：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="请输入文章标题" id="articletitle" name="articletitle">
+				<input type="text" class="input-text" value="" placeholder="请输入文章标题" id="articletitle" name="articletitle"><?php echo ($article_info["article_title"]); ?>
 			</div>
 		</div>
-
-		<div class="row cl">
-				<label class="form-label col-xs-4 col-sm-2">文章摘要：</label>
-				<div class="formControls col-xs-8 col-sm-9">
-					<input type="text" class="input-text" value="" placeholder="请输入文章摘要（不超过20字）" id="author" name="articlesummary">
-				</div>
-			</div>
-
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">文章作者：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="请输入文章作者" id="author" name="author">
+				<input type="text" class="input-text" value="" placeholder="请输入文章作者" id="author" name="author"><?php echo ($article_info["article_author"]); ?>
 			</div>
 		</div>
 		
@@ -65,7 +57,7 @@
 				</script>
 				<!--style给定宽度可以影响编辑器的最终宽度-->
 				<script type="text/plain" id="myEditor" style="width:100%;height:380px;" name="article_content">
-					<p>请在这里编写文章……</p>
+					<?php echo ($article_info["article_content"]); ?>
 				</script>
 			</div>
 		</div>

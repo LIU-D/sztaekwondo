@@ -53,9 +53,9 @@
 				<div class="menu">
 	            <ul class="megamenu skyblue">
                  <!--导航-->
-			    <li class="active grid"><a href="index.html">首页</a></li>
-				<li><a class="color6" href="showList.html">资讯</a></li>
-                <li><a class="color6" href="about.html">关于我们</a></li>
+			    <li class="active grid"><a href="<?php echo U('Index/index');?>">首页</a></li>
+				<li><a class="color6" href="<?php echo U('Index/showList');?>">资讯</a></li>
+                <li><a class="color6" href="<?php echo U('Index/about');?>">关于我们</a></li>
 			</ul>
 			</div>
 		</div>
@@ -218,31 +218,11 @@
 
               <div class="top-border"> </div>
               <div class="sidebar-bottom">
-                  <!--标题-->
-                  <h2 class="m_1">标题</h2>
+				<?php if(is_array($article_list)): foreach($article_list as $key=>$a): ?><!--标题-->
+                  <h2 class="m_1"><?php echo ($a["article_title"]); ?></h2>
                   <!--内容-->
-                  <p class="m_text">内内内内内内内内内内内内内容</p>
-                  <hr>
-                  <!--标题-->
-                  <h2 class="m_1">标题</h2>
-                  <!--内容-->
-                  <p class="m_text">内内内内内内内内内内内内内容</p>
-                  <hr>
-                  <!--标题-->
-                  <h2 class="m_1">标题</h2>
-                  <!--内容-->
-                  <p class="m_text">内内内内内内内内内内内内内容</p>
-                  <hr>
-                  <!--标题-->
-                  <h2 class="m_1">标题</h2>
-                  <!--内容-->
-                  <p class="m_text">内内内内内内内内内内内内内容</p>
-                  <hr>
-                  <!--标题-->
-                  <h2 class="m_1">标题</h2>
-                  <!--内容-->
-                  <p class="m_text">内内内内内内内内内内内内内容</p>
-                  <hr>
+                  <p class="m_text"><?php echo ($a["article_summary"]); ?></p>
+				  <hr><?php endforeach; endif; ?>
               </div>
 				<div class="clear"></div>
 			</div>			 						 			    

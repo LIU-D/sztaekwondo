@@ -1,20 +1,20 @@
-<!DOCTYPE HTML>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
 <html>
 <head>
     <title>List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link href="__PUBLIC__/Home/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/taiquandao/Public/Home/css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'> -->
-    <script type="text/javascript" src="__PUBLIC__/Home/js/jquery1.min.js"></script>
+    <script type="text/javascript" src="/taiquandao/Public/Home/js/jquery1.min.js"></script>
     <!-- start menu -->
-    <link href="__PUBLIC__/Home/css/megamenu.css" rel="stylesheet" type="text/css" media="all"/>
-    <script type="text/javascript" src="__PUBLIC__/Home/js/megamenu.js"></script>
+    <link href="/taiquandao/Public/Home/css/megamenu.css" rel="stylesheet" type="text/css" media="all"/>
+    <script type="text/javascript" src="/taiquandao/Public/Home/js/megamenu.js"></script>
     <script>$(document).ready(function () {
       $(".megamenu").megamenu();
     });</script>
     <!-- dropdown -->
-    <script src="__PUBLIC__/Home/js/jquery.easydropdown.js"></script>
+    <script src="/taiquandao/Public/Home/js/jquery.easydropdown.js"></script>
 </head>
 <body>
 <div class="header-top">
@@ -44,14 +44,14 @@
     <div class="wrap">
         <div class="header-bottom-left">
             <div class="logo">
-                <a href="index.html"><img src="__PUBLIC__/Home/images/logo.png" alt=""/></a>
+                <a href="index.html"><img src="/taiquandao/Public/Home/images/logo.png" alt=""/></a>
             </div>
             <div class="menu">
                 <ul class="megamenu skyblue">
                     <!--导航-->
-                    <li class="active grid"><a href="{:U('Index/index')}">首页</a></li>
-				    <li><a class="color6" href="{:U('Index/showList')}">资讯</a></li>
-                    <li><a class="color6" href="{:U('Index/about')}">关于我们</a></li>
+                    <li class="active grid"><a href="<?php echo U('Index/index');?>">首页</a></li>
+				    <li><a class="color6" href="<?php echo U('Index/showList');?>">资讯</a></li>
+                    <li><a class="color6" href="<?php echo U('Index/about');?>">关于我们</a></li>
                 </ul>
             </div>
         </div>
@@ -77,11 +77,9 @@
             <div class="article_list  ">
                 <h4 class="title">New Articles</h4>
                 <ul>
-                    <foreach name="article_list" item="a">
-                    <li>
-                        <p><a href="{:U('Index/article')}?id={$a.article_id}">{$a.article_title}</a></p>
-                    </li>
-                    </foreach>
+                    <?php if(is_array($article_list)): foreach($article_list as $key=>$a): ?><li>
+                        <p><a href="<?php echo U('Index/article');?>?id=<?php echo ($a["article_id"]); ?>"><?php echo ($a["article_title"]); ?></a></p>
+                    </li><?php endforeach; endif; ?>
 
                 </ul>
 

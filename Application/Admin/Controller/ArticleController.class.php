@@ -13,15 +13,16 @@ class ArticleController extends Controller {
             $article_title = I('post.articletitle');
             $article_author = I('post.author');
             $article_content = I('post.article_content');
+            $article_summary = I('post.articlesummary');
             $article_model = D('Article');
 
             $data = array(
                 'article_title' => $article_title,
                 'article_author' => $article_author,
-                'article_content' => $article_content
+                'article_content' => $article_content,
+                'article_summary' => $article_summary
             );
             if($article_model->add($data)){
-                echo "success";
                 $this->success('添加文章成功！',U('index'),3);
             }else{
                 echo "error";
@@ -32,18 +33,43 @@ class ArticleController extends Controller {
         }
     }
 
+    function editArticle(){
+        $id = I('post.id');
+        $article_info = D('Article')->find($id);
+        $this->assign('article_info',$article_info);
+        $this->display();
+    }
+
     function stopArticle(){
 
         $article_model = D('Article');
         $data = array(
             'article_id' => I('post.id'),
-            'article_isdel' => I('post.state')
+            'article_isdel' => I('post.state'),
+            'article_pubtime' =>I('post.time')
         );
         if($article_model->save($data)){
             $this->success('修改成功！',U('index'),3);
         }else{
             $this->error('修改失败！',U('index'),3);
         }  
+
+
+
+        // if(I('post.state') == '未发布'){
+        //     $date = date("Y-m-d H:i:s");
+        //     $data = array(
+        //         'article_id' => I('post.id'),
+        //         'article_isdel' => I('post.state'),
+        //         'article_pubtime' => $date
+        //     );
+        // }else{
+        //     $data = array(
+        //         'article_id' => I('post.id'),
+        //         'article_isdel' => I('post.state'),
+        //         'article_pubtime' => ''
+        //     );
+        // }
     }
 
     function delArticle(){

@@ -48,9 +48,9 @@
 					<td class="text-l">
 						<u style="cursor:pointer" class="text-primary" onClick="article_edit('查看','article-zhang.html','<?php echo ($a["article_id"]); ?>')" title="查看"><?php echo (substr($a["article_title"],0,42)); ?>...</u>
 					</td>
-					<td><?php echo (substr($a["article_content"],0,72)); ?>...</td>
+					<td><?php echo (substr($a["article_summary"],0,72)); ?>...</td>
 					<td><?php echo ($a["article_addtime"]); ?></td>
-					<td><?php echo ($a["article_pubtime"]); ?></td>
+					<td class="td-pubtime"><?php echo ($a["article_pubtime"]); ?></td>
 					<td><?php echo ($a["article_author"]); ?></td>
 					<td class="td-status">
 						<?php if($a["article_isdel"] == '已发布' ): ?><span class="label label-success radius"><?php echo ($a["article_isdel"]); ?></span>
@@ -65,7 +65,7 @@
 							<a style="text-decoration:none" onclick="article_start(this,'<?php echo ($a[article_id]); ?>')" href="javascript:;" title="发布">
 								<i class="Hui-iconfont">&#xe603;</i>
 							</a><?php endif; ?>
-						<a style="text-decoration:none" class="ml-5" onClick="article_edit('资讯编辑','article-add.html','10001')" href="javascript:;" title="编辑">
+						<a style="text-decoration:none" class="ml-5" onClick="article_edit('资讯编辑','<?php echo U("Article/editArticle");?>','<?php echo ($a[article_id]); ?>')" href="javascript:;" title="编辑">
 							<i class="Hui-iconfont">&#xe6df;</i>
 						</a> 
 						<a style="text-decoration:none" class="ml-5" onClick="article_del(this,'<?php echo ($a[article_id]); ?>')" href="javascript:;" title="删除">
@@ -98,6 +98,26 @@ $('.table-sort').dataTable({
 	]
 });
 
+
+
+Date.prototype.Format = function (fmt) {
+    var o = {
+        "M+": this.getMonth() + 1, //月份 
+        "d+": this.getDate(), //日 
+        "H+": this.getHours(), //小时 
+        "m+": this.getMinutes(), //分 
+        "s+": this.getSeconds(), //秒 
+        "q+": Math.floor((this.getMonth() + 3) / 3), //季度 
+        "S": this.getMilliseconds() //毫秒 
+    };
+    if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+    for (var k in o)
+    if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+    return fmt;
+}
+
+
+
 /*资讯-添加*/
 function article_add(title,url,w,h){
 	var index = layer.open({
@@ -109,6 +129,19 @@ function article_add(title,url,w,h){
 }
 /*资讯-编辑*/
 function article_edit(title,url,id,w,h){
+	$.ajax({
+			type: 'POST',
+			url: url,
+			data:{
+				id: id
+			},
+			dataType: 'json',
+			success: function(data){
+			},
+			error:function(data) {
+				console.log(data.msg);	
+			},
+		});	
 	var index = layer.open({
 		type: 2,
 		title: title,
@@ -162,13 +195,15 @@ function article_shenhe(obj,id){
 function article_stop(obj,id){
 	layer.confirm('确认要取消发布吗？',function(index){
 		var url = "<?php echo U('Article/stopArticle');?>";
+		var time = new Date().Format("yyyy-MM-dd HH:mm:ss");
 		$.ajax({
 			type: 'POST',
 			url: url,
 			dataType: 'json',
 			data:{
 				id: id,
-				state: '未发布'
+				state: '未发布',
+				time:time
 			},
 			success: function(data){
 				$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="article_start(this,id)" href="javascript:;" title="发布"><i class="Hui-iconfont">&#xe603;</i></a>');
@@ -193,13 +228,15 @@ function article_stop(obj,id){
 function article_start(obj,id){
 	layer.confirm('确认要发布吗？',function(index){
 		var url = "<?php echo U('Article/stopArticle');?>";
+		var time = new Date().Format("yyyy-MM-dd HH:mm:ss");
 		$.ajax({
 			type: 'POST',
 			url: url,
 			dataType: 'json',
 			data:{
 				id: id,
-				state: '已发布'
+				state: '已发布',
+				time:time
 			},
 			success: function(data){
 				$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="article_stop(this,id)" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a>');
