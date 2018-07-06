@@ -28,7 +28,7 @@
 </head>
 <body>
 <article class="page-container">
-	<form class="form form-horizontal" id="form-article-add">
+	<form action="<?php echo U('Article/addArticle');?>" method="post" enctype="multipart/form-data" class="form form-horizontal" id="form-article-add" >
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>文章标题：</label>
 			<div class="formControls col-xs-8 col-sm-9">
@@ -45,8 +45,20 @@
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">文章内容：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<script id="editor" type="text/plain" style="width:100%;height:400px;"></script>
-				<p>编写文章</p>
+				<link href="/taiquandao/Public/Admin/lib/umeditor/themes/default/css/umeditor.min.css" rel="stylesheet" />
+				<script src="/taiquandao/Public/Admin/lib/umeditor/third-party/jquery.min.js"></script>
+				<script src="/taiquandao/Public/Admin/lib/umeditor/umeditor.config.js"></script>
+				<script src="/taiquandao/Public/Admin/lib/umeditor/umeditor.min.js"></script>
+				<script src="/taiquandao/Public/Admin/lib/umeditor/lang/zh-cn/zh-cn.js"></script>
+				<script>
+					$(function(){
+						UM.getEditor('myEditor');
+					});
+				</script>
+				<!--style给定宽度可以影响编辑器的最终宽度-->
+				<script type="text/plain" id="myEditor" style="width:100%;height:380px;" name="article_content">
+					<p>请在这里编写文章……</p>
+				</script>
 			</div>
 		</div>
 		<div class="row cl">
@@ -65,7 +77,7 @@
 <script type="text/javascript" src="/taiquandao/Public/Admin/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer /作为公共模版分离出去-->
 
 <!--请在下方写此页面业务相关的脚本-->
-<script type="text/javascript" src="/taiquandao/Public/Admin/lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<!-- <script type="text/javascript" src="/taiquandao/Public/Admin/lib/My97DatePicker/4.8/WdatePicker.js"></script>
 <script type="text/javascript" src="/taiquandao/Public/Admin/lib/jquery.validation/1.14.0/jquery.validate.js"></script> 
 <script type="text/javascript" src="/taiquandao/Public/Admin/lib/jquery.validation/1.14.0/validate-methods.js"></script> 
 <script type="text/javascript" src="/taiquandao/Public/Admin/lib/jquery.validation/1.14.0/messages_zh.js"></script>
@@ -235,7 +247,7 @@ $(function(){
 	var ue = UE.getEditor('editor');
 	
 });
-</script>
+</script> -->
 <!--/请在上方写此页面业务相关的脚本-->
 </body>
 </html>

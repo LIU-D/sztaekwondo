@@ -9,14 +9,34 @@ class ArticleController extends Controller {
         $this->display();
     }
     public function addArticle(){
-        $this->display();
+        if(IS_POST){
+            $article_title = I('post.articletitle');
+            $article_author = I('post.author');
+            $article_content = I('post.article_content');
+            $article_model = D('Article');
+
+            $data = array(
+                'article_title' => $article_title,
+                'article_author' => $article_author,
+                'article_content' => $article_content
+            );
+            if($article_model->add($data)){
+                echo "success";
+                $this->success('添加文章成功！',U('index'),3);
+            }else{
+                echo "error";
+                $this->error('添加文章失败！',U('addArticle'),3);
+            }
+        }else{
+            $this->display();
+        }
     }
 
     function delArticle(){
         $article_model = D('Article');
         $data = array(
-            'article_id' => I('get.id'),
-            'article_isdel' => I('get.state')
+            'article_id' => I('post.id'),
+            'article_isdel' => I('post.state')
         );
         if($article_model->save($data)){
             $this->success('修改成功！',U('index'),3);

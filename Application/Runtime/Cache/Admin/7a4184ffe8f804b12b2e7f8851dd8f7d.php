@@ -62,7 +62,7 @@
 								<i class="Hui-iconfont">&#xe6de;</i>
 							</a>
 						<?php else: ?>
-							<a style="text-decoration:none" onclick="article_start(this,'<?php echo ($a[article_id]); ?>')" href="javascript:;" title="发布">
+							<a style="text-decoration:none" name="<?php echo U('Article/delArticle');?>" onclick="article_start(this,'<?php echo ($a[article_id]); ?>')" href="javascript:;" title="发布">
 								<i class="Hui-iconfont">&#xe603;</i>
 							</a><?php endif; ?>
 						<a style="text-decoration:none" class="ml-5" onClick="article_edit('资讯编辑','article-add.html','10001')" href="javascript:;" title="编辑">
@@ -157,19 +157,30 @@ function article_shenhe(obj,id){
 /*资讯-下架*/
 function article_stop(obj,id){
 	layer.confirm('确认要取消发布吗？',function(index){
-		$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="article_start(this,id)" href="javascript:;" title="发布"><i class="Hui-iconfont">&#xe603;</i></a>');
-		$(obj).parents("tr").find(".td-status").html('<span class="label label-defaunt radius">未发布</span>');
-		$(obj).remove();
-		$.ajax({
-			type:'get',
-        	data:{
-				url:url,
-        		id:id,
-				state:'未发布'
-			}
-   		});
-		layer.msg('取消发布!',{icon: 5,time:1000});
 		var url = $(obj).attr('name');
+		$.ajax({
+			type: 'POST',
+			url: url,
+			dataType: 'json',
+			data:{
+				id: id,
+				state: '未发布'
+			},
+			success: function(data){
+				$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="article_start(this,id)" href="javascript:;" title="发布"><i class="Hui-iconfont">&#xe603;</i></a>');
+				$(obj).parents("tr").find(".td-status").html('<span class="label label-defaunt radius">未发布</span>');
+				$(obj).remove();
+				layer.msg('取消发布!',{icon: 5,time:1000});
+			},
+			error:function(data) {
+				console.log(data.msg);
+			},
+		});	
+		// $(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="article_start(this,id)" href="javascript:;" title="发布"><i class="Hui-iconfont">&#xe603;</i></a>');
+		// $(obj).parents("tr").find(".td-status").html('<span class="label label-defaunt radius">未发布</span>');
+		// $(obj).remove();
+		// layer.msg('取消发布!',{icon: 5,time:1000});
+		// var url = $(obj).attr('name');
 		
 	});
 }
@@ -177,11 +188,35 @@ function article_stop(obj,id){
 /*资讯-发布*/
 function article_start(obj,id){
 	layer.confirm('确认要发布吗？',function(index){
-		$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="article_stop(this,id)" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a>');
-		$(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已发布</span>');
-		$(obj).remove();
+		var url = $(obj).attr('name');
+		$.ajax({
+			type: 'POST',
+			url: url,
+			dataType: 'json',
+			data:{
+				id: id,
+				state: '已发布'
+			},
+			success: function(data){
+				$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="article_stop(this,id)" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a>');
+				$(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已发布</span>');
+				$(obj).remove();
 
-		layer.msg('已发布!',{icon: 6,time:1000});
+				layer.msg('已发布!',{icon: 6,time:1000});
+			},
+			error:function(data) {
+				console.log(data.msg);
+			},
+		});	
+
+
+
+
+		// $(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="article_stop(this,id)" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a>');
+		// $(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已发布</span>');
+		// $(obj).remove();
+
+		// layer.msg('已发布!',{icon: 6,time:1000});
 
 	});
 }
