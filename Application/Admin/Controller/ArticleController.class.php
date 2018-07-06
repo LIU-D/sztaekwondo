@@ -32,7 +32,8 @@ class ArticleController extends Controller {
         }
     }
 
-    function delArticle(){
+    function stopArticle(){
+
         $article_model = D('Article');
         $data = array(
             'article_id' => I('post.id'),
@@ -44,4 +45,18 @@ class ArticleController extends Controller {
             $this->error('修改失败！',U('index'),3);
         }  
     }
+
+    function delArticle(){
+        $id = I('post.id');
+        $article_model = D('Article');
+        if($article_model->delete($id)){
+            $this->success('删除成功！',U('index'),3);
+        }else{
+                $this->error('删除失败！',U('index'),3);
+        } 
+    }
+
+
+
+
 }

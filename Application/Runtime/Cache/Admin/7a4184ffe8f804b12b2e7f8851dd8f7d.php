@@ -58,17 +58,17 @@
 							<span class="label label-dafault radius"><?php echo ($a["article_isdel"]); ?></span><?php endif; ?>		
 					</td>
 					<td class="f-14 td-manage">
-						<?php if($a["article_isdel"] == '已发布' ): ?><a style="text-decoration:none" name="<?php echo U('Article/delArticle');?>" onClick="article_stop(this,'<?php echo ($a[article_id]); ?>')" href="javascript:;" title="下架">
+						<?php if($a["article_isdel"] == '已发布' ): ?><a style="text-decoration:none" onClick="article_stop(this,'<?php echo ($a[article_id]); ?>')" href="javascript:;" title="下架">
 								<i class="Hui-iconfont">&#xe6de;</i>
 							</a>
 						<?php else: ?>
-							<a style="text-decoration:none" name="<?php echo U('Article/delArticle');?>" onclick="article_start(this,'<?php echo ($a[article_id]); ?>')" href="javascript:;" title="发布">
+							<a style="text-decoration:none" onclick="article_start(this,'<?php echo ($a[article_id]); ?>')" href="javascript:;" title="发布">
 								<i class="Hui-iconfont">&#xe603;</i>
 							</a><?php endif; ?>
 						<a style="text-decoration:none" class="ml-5" onClick="article_edit('资讯编辑','article-add.html','10001')" href="javascript:;" title="编辑">
 							<i class="Hui-iconfont">&#xe6df;</i>
 						</a> 
-						<a style="text-decoration:none" class="ml-5" onClick="article_del(this,'10001')" href="javascript:;" title="删除">
+						<a style="text-decoration:none" class="ml-5" onClick="article_del(this,'<?php echo ($a[article_id]); ?>')" href="javascript:;" title="删除">
 							<i class="Hui-iconfont">&#xe6e2;</i>
 						</a>
 					</td>
@@ -119,9 +119,13 @@ function article_edit(title,url,id,w,h){
 /*资讯-删除*/
 function article_del(obj,id){
 	layer.confirm('确认要删除吗？',function(index){
+		var url = "<?php echo U('Article/delArticle');?>";
 		$.ajax({
 			type: 'POST',
-			url: '',
+			url: url,
+			data:{
+				id: id
+			},
 			dataType: 'json',
 			success: function(data){
 				$(obj).parents("tr").remove();
@@ -157,7 +161,7 @@ function article_shenhe(obj,id){
 /*资讯-下架*/
 function article_stop(obj,id){
 	layer.confirm('确认要取消发布吗？',function(index){
-		var url = $(obj).attr('name');
+		var url = "<?php echo U('Article/stopArticle');?>";
 		$.ajax({
 			type: 'POST',
 			url: url,
@@ -188,7 +192,7 @@ function article_stop(obj,id){
 /*资讯-发布*/
 function article_start(obj,id){
 	layer.confirm('确认要发布吗？',function(index){
-		var url = $(obj).attr('name');
+		var url = "<?php echo U('Article/stopArticle');?>";
 		$.ajax({
 			type: 'POST',
 			url: url,
