@@ -31,39 +31,48 @@
 			<thead>
 				<tr class="text-c">
 					<th width="25"><input type="checkbox" name="" value=""></th>
-					<th width="80">ID</th>
-					<th width="120">标题</th>
+					<th width="40">ID</th>
+					<th width="200">标题</th>
 					<th>内容</th>
-					<th width="80">创建时间</th>
-					<th width="80">发布时间</th>
+					<th width="120">创建时间</th>
+					<th width="120">发布时间</th>
 					<th width="75">作者</th>
 					<th width="60">发布状态</th>
 					<th width="120">操作</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr class="text-c">
+			<?php if(is_array($article_list)): foreach($article_list as $key=>$a): ?><tr class="text-c">
 					<td><input type="checkbox" value="" name=""></td>
-					<td>10001</td>
-					<td class="text-l"><u style="cursor:pointer" class="text-primary" onClick="article_edit('查看','article-zhang.html','10001')" title="查看">资讯标题</u></td>
-					<td>行业动态</td>
-					<td>H-ui</td>
-					<td>2014-6-11 11:11:42</td>
-					<td>21212</td>
-					<td class="td-status"><span class="label label-success radius">已发布</span></td>
-					<td class="f-14 td-manage"><a style="text-decoration:none" onClick="article_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a> <a style="text-decoration:none" class="ml-5" onClick="article_edit('资讯编辑','article-add.html','10001')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="article_del(this,'10001')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
-				</tr>
-				<tr class="text-c">
-					<td><input type="checkbox" value="" name=""></td>
-					<td>10002</td>
-					<td class="text-l"><u style="cursor:pointer" class="text-primary" onClick="article_edit('查看','article-zhang.html','10002')" title="查看">资讯标题</u></td>
-					<td>行业动态</td>
-					<td>H-ui</td>
-					<td>2014-6-11 11:11:42</td>
-					<td>21212</td>
-					<td class="td-status"><span class="label label-success radius">草稿</span></td>
-					<td class="f-14 td-manage"><a style="text-decoration:none" onClick="article_shenhe(this,'10001')" href="javascript:;" title="审核">审核</a> <a style="text-decoration:none" class="ml-5" onClick="article_edit('资讯编辑','article-add.html','10001')" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="article_del(this,'10001')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
-				</tr>
+					<td><?php echo ($a["article_id"]); ?></td>
+					<td class="text-l">
+						<u style="cursor:pointer" class="text-primary" onClick="article_edit('查看','article-zhang.html','<?php echo ($a["article_id"]); ?>')" title="查看"><?php echo (substr($a["article_title"],0,42)); ?>...</u>
+					</td>
+					<td><?php echo (substr($a["article_content"],0,72)); ?>...</td>
+					<td><?php echo ($a["article_addtime"]); ?></td>
+					<td><?php echo ($a["article_pubtime"]); ?></td>
+					<td><?php echo ($a["article_author"]); ?></td>
+					<td class="td-status">
+						<?php if($a["article_isdel"] == '已发布' ): ?><span class="label label-success radius"><?php echo ($a["article_isdel"]); ?></span>
+						<?php else: ?>
+							<span class="label label-dafault radius"><?php echo ($a["article_isdel"]); ?></span><?php endif; ?>		
+					</td>
+					<td class="f-14 td-manage">
+						<?php if($a["article_isdel"] == '已发布' ): ?><a style="text-decoration:none" name="<?php echo U('Article/delArticle');?>" onClick="article_stop(this,'<?php echo ($a[article_id]); ?>')" href="javascript:;" title="下架">
+								<i class="Hui-iconfont">&#xe6de;</i>
+							</a>
+						<?php else: ?>
+							<a style="text-decoration:none" onclick="article_start(this,'<?php echo ($a[article_id]); ?>')" href="javascript:;" title="发布">
+								<i class="Hui-iconfont">&#xe603;</i>
+							</a><?php endif; ?>
+						<a style="text-decoration:none" class="ml-5" onClick="article_edit('资讯编辑','article-add.html','10001')" href="javascript:;" title="编辑">
+							<i class="Hui-iconfont">&#xe6df;</i>
+						</a> 
+						<a style="text-decoration:none" class="ml-5" onClick="article_del(this,'10001')" href="javascript:;" title="删除">
+							<i class="Hui-iconfont">&#xe6e2;</i>
+						</a>
+					</td>
+				</tr><?php endforeach; endif; ?>
 			</tbody>
 		</table>
 	</div>
@@ -147,11 +156,21 @@ function article_shenhe(obj,id){
 }
 /*资讯-下架*/
 function article_stop(obj,id){
-	layer.confirm('确认要下架吗？',function(index){
+	layer.confirm('确认要取消发布吗？',function(index){
 		$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="article_start(this,id)" href="javascript:;" title="发布"><i class="Hui-iconfont">&#xe603;</i></a>');
-		$(obj).parents("tr").find(".td-status").html('<span class="label label-defaunt radius">已下架</span>');
+		$(obj).parents("tr").find(".td-status").html('<span class="label label-defaunt radius">未发布</span>');
 		$(obj).remove();
-		layer.msg('已下架!',{icon: 5,time:1000});
+		$.ajax({
+			type:'get',
+        	data:{
+				url:url,
+        		id:id,
+				state:'未发布'
+			}
+   		});
+		layer.msg('取消发布!',{icon: 5,time:1000});
+		var url = $(obj).attr('name');
+		
 	});
 }
 
@@ -161,7 +180,9 @@ function article_start(obj,id){
 		$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="article_stop(this,id)" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a>');
 		$(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已发布</span>');
 		$(obj).remove();
+
 		layer.msg('已发布!',{icon: 6,time:1000});
+
 	});
 }
 /*资讯-申请上线*/
