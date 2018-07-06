@@ -84,7 +84,7 @@
                 <span>发布时间：</span><span><?php echo ($article_list["article_pubtime"]); ?></span>&nbsp;&nbsp;&nbsp;&nbsp;
                 <span>作者：</span><span><?php echo ($article_list["article_author"]); ?></span>
             </h3>
-            <div class="article_content"><?php echo htmlspecialchars_decode($article_list.article_content);?></div>
+            <div class="article_content"><?php echo (stripslashes(htmlspecialchars_decode($article_list["article_content"]))); ?></div>
 
         </div>
 	</div>	

@@ -55,8 +55,8 @@
 			<div class="formControls col-xs-8 col-sm-9">
 				<link href="/taiquandao/Public/Admin/lib/umeditor/themes/default/css/umeditor.min.css" rel="stylesheet" />
 				<script src="/taiquandao/Public/Admin/lib/umeditor/third-party/jquery.min.js"></script>
-				<script src="/taiquandao/Public/Admin/lib/umeditor/umeditor.config.js"></script>
 				<script src="/taiquandao/Public/Admin/lib/umeditor/umeditor.min.js"></script>
+				<script src="/taiquandao/Public/Admin/lib/umeditor/umeditor.config.js"></script>
 				<script src="/taiquandao/Public/Admin/lib/umeditor/lang/zh-cn/zh-cn.js"></script>
 				<script>
 					$(function(){
@@ -83,6 +83,20 @@
 <script type="text/javascript" src="/taiquandao/Public/Admin/lib/layer/2.4/layer.js"></script>
 <script type="text/javascript" src="/taiquandao/Public/Admin/static/h-ui/js/H-ui.min.js"></script> 
 <script type="text/javascript" src="/taiquandao/Public/Admin/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer /作为公共模版分离出去-->
+
+
+<script type="text/javascript" charset="utf-8">
+    window.UEDITOR_HOME_URL = "/taiquandao/Public/Admin/lib/umeditor/";  //UEDITOR_HOME_URL、config、all这三个顺序不能改变
+    window.onload=function(){
+        window.UEDITOR_CONFIG.initialFrameHeight=380;//编辑器的高度
+        window.UEDITOR_CONFIG.imageUrl="<?php echo U('Admin/Article/checkPic');?>";          //图片上传提交地址
+        window.UEDITOR_CONFIG.imagePath='./Uploads/thumb/';//编辑器调用图片的地址
+        UE.getEditor('myEditor');//里面的contents是我的textarea的id值
+       
+        }
+</script>
+
+
 
 <!--请在下方写此页面业务相关的脚本-->
 <!-- <script type="text/javascript" src="/taiquandao/Public/Admin/lib/My97DatePicker/4.8/WdatePicker.js"></script>
