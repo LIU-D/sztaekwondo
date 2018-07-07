@@ -67,7 +67,7 @@
 <!--轮播图-->
     <div class="login">
      <div class="wrap">
-	    <ul class="breadcrumb breadcrumb__t"><a class="home" href="#">Home</a>  / Article</ul>
+	    <ul class="breadcrumb breadcrumb__t"><a class="home" href="#">Home</a>  / <a class="home" href="#">List</a>  / Article</ul>
 
 
 

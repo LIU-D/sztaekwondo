@@ -145,8 +145,8 @@
         ,toolbar:[
            'source | undo redo | bold italic underline strikethrough | superscript subscript | forecolor backcolor | removeformat |',
             'insertorderedlist insertunorderedlist | selectall cleardoc paragraph | fontfamily fontsize' ,
-            '| justifyleft justifycenter justifyright justifyjustify |',
-            'link unlink | image video | horizontal formula fullscreen'
+            '| justifyleft justifycenter justifyright justifyjustify ',
+            '| horizontal formula fullscreen'
         ]
 
 		/*,toolbar:[

@@ -16052,3 +16052,86 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002103s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002160s ]
 
+[ 2018-07-06T21:13:50+08:00 ] 127.0.0.1 /taiquandao/admin/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001187s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001250s ]
+
+[ 2018-07-06T21:13:50+08:00 ] 127.0.0.1 /taiquandao/index.php/Admin/Main/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014107s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2018-07-06T21:13:52+08:00 ] 127.0.0.1 /taiquandao/index.php/Admin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `sz_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `sz_article`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\taiquandao\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 61 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\taiquandao\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 68 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\taiquandao\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 71 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\taiquandao\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 61 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\taiquandao\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 68 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\taiquandao\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 71 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\taiquandao\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 65 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\taiquandao\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 68 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\taiquandao\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 71 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\taiquandao\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 61 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\taiquandao\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 68 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\taiquandao\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 71 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\taiquandao\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 65 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\taiquandao\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 68 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\taiquandao\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 71 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\taiquandao\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 65 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\taiquandao\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 68 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\taiquandao\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 71 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\taiquandao\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 65 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\taiquandao\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 68 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\taiquandao\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001193s ]
+

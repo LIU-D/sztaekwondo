@@ -52,3 +52,15 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
 ERR: 无法加载模块:Public
 
+[ 2018-07-06T21:18:31+08:00 ] 127.0.0.1 /taiquandao/Public/Home/css/loading.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T21:18:31+08:00 ] 127.0.0.1 /taiquandao/Public/Home/images/l-r-arrows.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+ERR: 无法加载模块:Public
+
