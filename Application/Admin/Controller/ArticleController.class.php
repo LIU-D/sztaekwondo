@@ -1,7 +1,7 @@
 <?php
 namespace Admin\Controller;
-use Think\Controller;
-class ArticleController extends Controller {
+
+class ArticleController extends CommonController {
     public function index(){
         $article_model = D('Article');
         $article_list = $article_model->select();

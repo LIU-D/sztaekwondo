@@ -1,66 +1,270 @@
-[ 2018-07-06T19:48:58+08:00 ] 127.0.0.1 /taiquandao/Public/Home/css/loading.gif
+[ 2018-07-06T09:41:45+08:00 ] 127.0.0.1 /favicon.ico
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
-ERR: 无法加载模块:Public
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+ERR: 无法加载模块:Favicon
 
-[ 2018-07-06T19:48:58+08:00 ] 127.0.0.1 /taiquandao/Public/Home/images/l-r-arrows.png
+[ 2018-07-06T09:42:11+08:00 ] 127.0.0.1 /Public/Admin/favicon.ico
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
 ERR: 无法加载模块:Public
 
-[ 2018-07-06T20:03:09+08:00 ] 127.0.0.1 /taiquandao/Public/Home/css/loading.gif
+[ 2018-07-06T12:08:39+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000868s ]
 ERR: 无法加载模块:Public
 
-[ 2018-07-06T20:03:09+08:00 ] 127.0.0.1 /taiquandao/Public/Home/images/l-r-arrows.png
+[ 2018-07-06T12:14:30+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
 ERR: 无法加载模块:Public
 
-[ 2018-07-06T20:04:40+08:00 ] 127.0.0.1 /taiquandao/showList.html
+[ 2018-07-06T12:18:40+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
-ERR: 无法加载模块:ShowList
-
-[ 2018-07-06T20:23:27+08:00 ] 127.0.0.1 /taiquandao/Public/Home/css/loading.gif
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
 ERR: 无法加载模块:Public
 
-[ 2018-07-06T20:23:27+08:00 ] 127.0.0.1 /taiquandao/Public/Home/images/l-r-arrows.png
+[ 2018-07-06T12:19:09+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
 ERR: 无法加载模块:Public
 
-[ 2018-07-06T20:39:44+08:00 ] 127.0.0.1 /taiquandao/Public/Home/css/loading.gif
+[ 2018-07-06T13:03:58+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001812s ]
 ERR: 无法加载模块:Public
 
-[ 2018-07-06T20:39:44+08:00 ] 127.0.0.1 /taiquandao/Public/Home/images/l-r-arrows.png
+[ 2018-07-06T13:04:03+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000828s ]
 ERR: 无法加载模块:Public
 
-[ 2018-07-06T21:18:31+08:00 ] 127.0.0.1 /taiquandao/Public/Home/css/loading.gif
+[ 2018-07-06T13:07:49+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
 ERR: 无法加载模块:Public
 
-[ 2018-07-06T21:18:31+08:00 ] 127.0.0.1 /taiquandao/Public/Home/images/l-r-arrows.png
+[ 2018-07-06T13:13:32+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T13:16:33+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T13:29:37+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T13:29:54+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T13:38:58+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001040s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T18:52:09+08:00 ] 127.0.0.1 /Public/Home/css/loading.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T18:52:10+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001496s ]
+ERR: 无法加载模块:Favicon
+
+[ 2018-07-06T18:52:10+08:00 ] 127.0.0.1 /Public/Home/images/l-r-arrows.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T18:52:11+08:00 ] 127.0.0.1 /login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+ERR: 无法加载模块:Login
+
+[ 2018-07-06T18:52:15+08:00 ] 127.0.0.1 /login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+ERR: 无法加载模块:Login
+
+[ 2018-07-06T18:53:13+08:00 ] 127.0.0.1 /Public/Admin/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T18:53:41+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T18:55:23+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T18:55:24+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T18:55:33+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T18:55:34+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T18:55:35+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T18:55:35+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T19:39:36+08:00 ] 127.0.0.1 /Public/Home/css/loading.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000729s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T19:39:37+08:00 ] 127.0.0.1 /Public/Home/images/l-r-arrows.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001210s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T19:39:39+08:00 ] 127.0.0.1 /login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+ERR: 无法加载模块:Login
+
+[ 2018-07-06T19:42:15+08:00 ] 127.0.0.1 /login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+ERR: 无法加载模块:Login
+
+[ 2018-07-06T19:42:18+08:00 ] 127.0.0.1 /login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+ERR: 无法加载模块:Login
+
+[ 2018-07-06T19:43:04+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T19:43:41+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T20:42:34+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T20:42:36+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T20:42:37+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001139s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T20:42:39+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001230s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T20:42:39+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000828s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T20:42:40+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001214s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T20:57:36+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T20:57:38+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T20:57:40+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T20:57:42+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000808s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-06T20:57:44+08:00 ] 127.0.0.1 /Public/Admin/temp/200x150.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001211s ]
 ERR: 无法加载模块:Public
 

@@ -4,21 +4,21 @@
 <title>Home</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="/taiquandao/Public/Home/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="/taiquandao/Public/Home/css/form.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/sztaekwondo/Public/Home/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/sztaekwondo/Public/Home/css/form.css" rel="stylesheet" type="text/css" media="all" />
 <!--<link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>-->
-<script type="text/javascript" src="/taiquandao/Public/Home/js/jquery1.min.js"></script>
+<script type="text/javascript" src="/sztaekwondo/Public/Home/js/jquery1.min.js"></script>
 <!-- start menu -->
-<link href="/taiquandao/Public/Home/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="/taiquandao/Public/Home/js/megamenu.js"></script>
+<link href="/sztaekwondo/Public/Home/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="/sztaekwondo/Public/Home/js/megamenu.js"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
 <!--start slider -->
-    <link rel="stylesheet" href="/taiquandao/Public/Home/css/fwslider.css" media="all">
-    <script src="/taiquandao/Public/Home/js/jquery-ui.min.js"></script>
-    <script src="/taiquandao/Public/Home/js/css3-mediaqueries.js"></script>
-    <script src="/taiquandao/Public/Home/js/fwslider.js"></script>
+    <link rel="stylesheet" href="/sztaekwondo/Public/Home/css/fwslider.css" media="all">
+    <script src="/sztaekwondo/Public/Home/js/jquery-ui.min.js"></script>
+    <script src="/sztaekwondo/Public/Home/js/css3-mediaqueries.js"></script>
+    <script src="/sztaekwondo/Public/Home/js/fwslider.js"></script>
 <!--end slider -->
-<script src="/taiquandao/Public/Home/js/jquery.easydropdown.js"></script>
+<script src="/sztaekwondo/Public/Home/js/jquery.easydropdown.js"></script>
 </head>
 <body>
      <div class="header-top">
@@ -37,7 +37,7 @@
    			 </div>
 			 <div class="cssmenu">
 				<ul>
-					<li><a href="login.html">管理员登陆</a></li>
+					<li><a href="<?php echo U('Admin/index/index');?>">管理员登陆</a></li>
 					<!--<li><a href="register.html">Sign Up</a></li>-->
 				</ul>
 			</div>
@@ -48,7 +48,7 @@
 	    <div class="wrap">
 			<div class="header-bottom-left">
 				<div class="logo">
-					<a href="index.html"><img src="/taiquandao/Public/Home/images/logo.png" alt=""/></a>
+					<a href=""><img src="/sztaekwondo/Public/Home/images/logo.png" alt=""/></a>
 				</div>
 				<div class="menu">
 	            <ul class="megamenu skyblue">
@@ -75,70 +75,71 @@
   <!-- start slider -->
     <div id="fwslider">
         <div class="slider_container">
-            <div class="slide"> 
-                <!-- Slide image -->
-                    <img src="/taiquandao/Public/Home/images/slider/wall5.jpg" alt=""/>
-                <!-- /Slide image -->
-                <!-- Texts container -->
-                <div class="slide_content">
-                    <div class="slide_content_wrap">
-                        <!-- Text title -->
-                        <h4 class="title">Aluminium Club</h4>
-                        <!-- /Text title -->
-                        
-                        <!-- Text description -->
-                        <p class="description">Experiance ray ban</p>
-                        <!-- /Text description -->
-                    </div>
-                </div>
-                 <!-- /Texts container -->
-            </div>
+            <!--<div class="slide"> -->
+                <!--&lt;!&ndash; Slide image &ndash;&gt;-->
+                    <!--<img src="/sztaekwondo/Public/Home/images/slider/wall5.jpg" alt=""/>-->
+                <!--&lt;!&ndash; /Slide image &ndash;&gt;-->
+                <!--&lt;!&ndash; Texts container &ndash;&gt;-->
+                <!--<div class="slide_content">-->
+                    <!--<div class="slide_content_wrap">-->
+                        <!--&lt;!&ndash; Text title &ndash;&gt;-->
+                        <!--<h4 class="title">Aluminium Club</h4>-->
+                        <!--&lt;!&ndash; /Text title &ndash;&gt;-->
+                        <!---->
+                        <!--&lt;!&ndash; Text description &ndash;&gt;-->
+                        <!--<p class="description">Experiance ray ban</p>-->
+                        <!--&lt;!&ndash; /Text description &ndash;&gt;-->
+                    <!--</div>-->
+                <!--</div>-->
+                 <!--&lt;!&ndash; /Texts container &ndash;&gt;-->
+            <!--</div>-->
 
             <!-- /Duplicate to create more slides -->
-            <div class="slide">
-                <img src="/taiquandao/Public/Home/images/slider/wall2.jpg" alt=""/>
-                <div class="slide_content">
-                    <div class="slide_content_wrap">
-                        <h4 class="title">中文测试 </h4>
-                        <p class="description">diam nonummy nibh euismod</p>
-                    </div>
-                </div>
-            </div>
+			<?php if(is_array($slide_list)): foreach($slide_list as $key=>$v): ?><div class="slide">
+					<img src="/sztaekwondo<?php echo ($v["img_logo"]); ?>" alt=""/>
+					<div class="slide_content">
+						<div class="slide_content_wrap">
+							<h4 class="title"><?php echo ($v["img_title"]); ?></h4>
+							<p class="description">Taekondo</p>
+						</div>
+					</div>
+				</div><?php endforeach; endif; ?>
+
             <!--/slide -->
 
-            <!-- /Duplicate to create more slides -->
-            <div class="slide">
-                <img src="/taiquandao/Public/Home/images/slider/wall3.jpg" alt=""/>
-                <div class="slide_content">
-                    <div class="slide_content_wrap">
-                        <h4 class="title">consectetuer adipiscing </h4>
-                        <p class="description">diam nonummy nibh euismod</p>
-                    </div>
-                </div>
-            </div>
-            <!--/slide -->
-            <!-- /Duplicate to create more slides -->
-            <div class="slide">
-                <img src="/taiquandao/Public/Home/images/slider/wall4.jpg" alt=""/>
-                <div class="slide_content">
-                    <div class="slide_content_wrap">
-                        <h4 class="title">consectetuer adipiscing </h4>
-                        <p class="description">diam nonummy nibh euismod</p>
-                    </div>
-                </div>
-            </div>
-            <!--/slide -->
-            <!-- /Duplicate to create more slides -->
-            <div class="slide">
-                <img src="/taiquandao/Public/Home/images/slider/wall1.jpg" alt=""/>
-                <div class="slide_content">
-                    <div class="slide_content_wrap">
-                        <h4 class="title">consectetuer adipiscing </h4>
-                        <p class="description">diam nonummy nibh euismod</p>
-                    </div>
-                </div>
-            </div>
-            <!--/slide -->
+            <!--&lt;!&ndash; /Duplicate to create more slides &ndash;&gt;-->
+            <!--<div class="slide">-->
+                <!--<img src="/sztaekwondo/Public/Home/images/slider/wall3.jpg" alt=""/>-->
+                <!--<div class="slide_content">-->
+                    <!--<div class="slide_content_wrap">-->
+                        <!--<h4 class="title">consectetuer adipiscing </h4>-->
+                        <!--<p class="description">diam nonummy nibh euismod</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;/slide &ndash;&gt;-->
+            <!--&lt;!&ndash; /Duplicate to create more slides &ndash;&gt;-->
+            <!--<div class="slide">-->
+                <!--<img src="/sztaekwondo/Public/Home/images/slider/wall4.jpg" alt=""/>-->
+                <!--<div class="slide_content">-->
+                    <!--<div class="slide_content_wrap">-->
+                        <!--<h4 class="title">consectetuer adipiscing </h4>-->
+                        <!--<p class="description">diam nonummy nibh euismod</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;/slide &ndash;&gt;-->
+            <!--&lt;!&ndash; /Duplicate to create more slides &ndash;&gt;-->
+            <!--<div class="slide">-->
+                <!--<img src="/sztaekwondo/Public/Home/images/slider/wall1.jpg" alt=""/>-->
+                <!--<div class="slide_content">-->
+                    <!--<div class="slide_content_wrap">-->
+                        <!--<h4 class="title">consectetuer adipiscing </h4>-->
+                        <!--<p class="description">diam nonummy nibh euismod</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;/slide &ndash;&gt;-->
         </div>
         <div class="timers"></div>
         <div class="slidePrev"><span></span></div>
@@ -152,66 +153,64 @@
               <!--图片展示栏-->
 		  	<h2 class="head">图片展示</h2>
 			<div class="top-box">
-			 <div class="col_1_of_3 span_1_of_3"> 
-			   <a href="single.html">
-				<div class="inner_content clearfix">
-					<div class="product_image">
-						<img src="/taiquandao/Public/Home/images/showbox/box1.jpg" alt=""/>
-					</div>
-                    <div class="sale-box"><span class="on_sale title_shop">左测试</span></div>
-                    <div class="price">
-					   <div class="cart-left">
-							<p class="title">一只白熊</p>
-							<div class="price1">
-							  <span class="actual">2018-3-13</span>
+			 <!--<div class="col_1_of_3 span_1_of_3"> -->
+			   <!--<a href="single.html">-->
+				<!--<div class="inner_content clearfix">-->
+					<!--<div class="product_image">-->
+						<!--<img src="/sztaekwondo/Public/Home/images/showbox/box1.jpg" alt=""/>-->
+					<!--</div>-->
+                    <!--<div class="sale-box"><span class="on_sale title_shop">左测试</span></div>-->
+                    <!--<div class="price">-->
+					   <!--<div class="cart-left">-->
+							<!--<p class="title">一只白熊</p>-->
+							<!--<div class="price1">-->
+							  <!--<span class="actual">2018-3-13</span>-->
+							<!--</div>-->
+						<!--</div>-->
+						<!--&lt;!&ndash;<div class="cart-right"> </div>&ndash;&gt;-->
+						<!--<div class="clear"></div>-->
+					 <!--</div>				-->
+                   <!--</div>-->
+                 <!--</a>-->
+				<!--</div>-->
+			   <!--<div class="col_1_of_3 span_1_of_3">-->
+			   	 <!--<a href="single.html">-->
+					<!--<div class="inner_content clearfix">-->
+					<!--<div class="product_image">-->
+						<!--<img src="/sztaekwondo/Public/Home/images/showbox/box2.jpg" alt=""/>-->
+					<!--</div>-->
+                    <!--<div class="price">-->
+					   <!--<div class="cart-left">-->
+							<!--<p class="title">另一只白熊</p>-->
+							<!--<div class="price1">-->
+							  <!--<span class="actual">2017-12-22</span>-->
+							<!--</div>-->
+						<!--</div>-->
+						<!--&lt;!&ndash;<div class="cart-right"> </div>&ndash;&gt;-->
+						<!--<div class="clear"></div>-->
+					 <!--</div>				-->
+                   <!--</div>-->
+                   <!--</a>-->
+				<!--</div>-->
+				<?php if(is_array($showbox_list)): foreach($showbox_list as $key=>$v): ?><div class="col_1_of_3 span_1_of_3">
+							<div class="inner_content clearfix">
+								<div class="product_image">
+									<img src="/sztaekwondo<?php echo ($v["img_logo"]); ?>" alt=""/>
+								</div>
+								<!--<div class="sale-box1"><span class="on_sale title_shop"></span></div>-->
+								<div class="price">
+									<div class="cart-left">
+										<p class="title"><?php echo ($v["img_title"]); ?></p>
+										<div class="price1">
+											<!--<span class="reducedfrom">$66.00</span>-->
+											<span class="actual"><?php echo ($v["pubtime"]); ?></span>
+										</div>
+									</div>
+									<!--<div class="cart-right"> </div>-->
+									<div class="clear"></div>
+								</div>
 							</div>
-						</div>
-						<!--<div class="cart-right"> </div>-->
-						<div class="clear"></div>
-					 </div>				
-                   </div>
-                 </a>
-				</div>
-			   <div class="col_1_of_3 span_1_of_3">
-			   	 <a href="single.html">
-					<div class="inner_content clearfix">
-					<div class="product_image">
-						<img src="/taiquandao/Public/Home/images/showbox/box2.jpg" alt=""/>
-					</div>
-                    <div class="price">
-					   <div class="cart-left">
-							<p class="title">另一只白熊</p>
-							<div class="price1">
-							  <span class="actual">2017-12-22</span>
-							</div>
-						</div>
-						<!--<div class="cart-right"> </div>-->
-						<div class="clear"></div>
-					 </div>				
-                   </div>
-                   </a>
-				</div>
-				<div class="col_1_of_3 span_1_of_3">
-				 <a href="single.html">
-				  <div class="inner_content clearfix">
-					<div class="product_image">
-						<img src="/taiquandao/Public/Home/images/showbox/box3.jpg" alt=""/>
-					</div>
-                    <div class="sale-box1"><span class="on_sale title_shop">右测试</span></div>	
-                    <div class="price">
-					   <div class="cart-left">
-							<p class="title">另外一只白熊</p>
-							<div class="price1">
-							  <!--<span class="reducedfrom">$66.00</span>-->
-							  <span class="actual">2017-10-5</span>
-							</div>
-						</div>
-						<!--<div class="cart-right"> </div>-->
-						<div class="clear"></div>
-					 </div>				
-                   </div>
-                   </a>
-				</div>
+					</div><?php endforeach; endif; ?>
 				<div class="clear"></div>
 			</div>
 
@@ -219,7 +218,10 @@
               <div class="top-border"> </div>
               <div class="sidebar-bottom">
 				<?php if(is_array($article_list)): foreach($article_list as $key=>$a): ?><!--标题-->
-                  <h2 class="m_1"><?php echo ($a["article_title"]); ?></h2>
+					<a href="<?php echo U('Index/article');?>?id=<?php echo ($a["article_id"]); ?>">
+						<h2 class="m_1"><?php echo ($a["article_title"]); ?></h2>
+					</a>
+
                   <!--内容-->
                   <p class="m_text"><?php echo ($a["article_summary"]); ?></p>
 				  <hr><?php endforeach; endif; ?>
@@ -235,9 +237,9 @@
 			<div class="rsidebar span_1_of_left">
 				<div class="top-border"> </div>
 				 <div class="border">
-	             <link href="/taiquandao/Public/Home/css/default.css" rel="stylesheet" type="text/css" media="all" />
-	             <link href="/taiquandao/Public/Home/css/nivo-slider.css" rel="stylesheet" type="text/css" media="all" />
-				  <script src="/taiquandao/Public/Home/js/jquery.nivo.slider.js"></script>
+	             <link href="/sztaekwondo/Public/Home/css/default.css" rel="stylesheet" type="text/css" media="all" />
+	             <link href="/sztaekwondo/Public/Home/css/nivo-slider.css" rel="stylesheet" type="text/css" media="all" />
+				  <script src="/sztaekwondo/Public/Home/js/jquery.nivo.slider.js"></script>
 				    <script type="text/javascript">
 				    $(window).load(function() {
 				        $('#slider').nivoSlider();
@@ -245,19 +247,20 @@
 				    </script>
 		    <div class="slider-wrapper theme-default">
               <div id="slider" class="nivoSlider">
-                <img src="/taiquandao/Public/Home/images/t-img1.jpg"  alt="" />
-               	<img src="/taiquandao/Public/Home/images/t-img2.jpg"  alt="" />
-                <img src="/taiquandao/Public/Home/images/t-img3.jpg"  alt="" />
-                  <img src="/taiquandao/Public/Home/images/t-img3.jpg"  alt="" />
-                  <img src="/taiquandao/Public/Home/images/t-img3.jpg"  alt="" />
+				  <?php if(is_array($member_list)): foreach($member_list as $key=>$v): ?><img src="/sztaekwondo<?php echo ($v["img_logo"]); ?>"  alt="" /><?php endforeach; endif; ?>
+                <!--<img src="/sztaekwondo/Public/Home/images/t-img1.jpg"  alt="" />-->
+               	<!--<img src="/sztaekwondo/Public/Home/images/t-img2.jpg"  alt="" />-->
+                <!--<img src="/sztaekwondo/Public/Home/images/t-img3.jpg"  alt="" />-->
+                  <!--<img src="/sztaekwondo/Public/Home/images/t-img3.jpg"  alt="" />-->
+                  <!--<img src="/sztaekwondo/Public/Home/images/t-img3.jpg"  alt="" />-->
               </div>
              </div>
-              <div class="btn"><a href="about.html">About us</a></div>
+              <div class="btn"><a href="<?php echo U('Index/about');?>">About us</a></div>
              </div>
            <div class="top-border"> </div>
 			<div class="sidebar-bottom">
-			    <h2 class="m_1">Newsletters<br> Signup</h2>
-			    <p class="m_text">Lorem ipsum dolor sit amet, consectetuer</p>
+			    <h2 class="m_1">Information<br> Signup</h2>
+			    <p class="m_text">a website about taekwondo</p>
 			    <div class="subscribe">
 					 <form>
 					    <input name="userName" type="text" class="textbox">
@@ -278,7 +281,7 @@
 			  <div class="col_1_of_f_1 span_1_of_f_1">
 				 <div class="section group example">
 				   <div class="col_1_of_f_2 span_1_of_f_2">
-				      <h3>Facebook</h3>
+				      <h3>山庄跆拳道，欢迎您</h3>
 						<script>(function(d, s, id) {
 						  var js, fjs = d.getElementsByTagName(s)[0];
 						  if (d.getElementById(id)) return;
@@ -291,13 +294,13 @@
 						</div>
  				  </div>
 				  <div class="col_1_of_f_2 span_1_of_f_2">
-						<h3>From Twitter</h3>
+						<h3>跆拳道微博</h3>
 				       <div class="recent-tweet">
 							<div class="recent-tweet-icon">
 								<span> </span>
 							</div>
 							<div class="recent-tweet-info">
-								<p>Ds which don't look even slightly believable. If you are <a href="#">going to use nibh euismod</a> tincidunt ut laoreet adipisicing</p>
+								<p>如果你想了解更多关于山庄跆拳道社团的各类动态，请点击<a href="https://weibo.com/">山庄跆拳道微博</a> 山庄跆拳道欢迎您</p>
 							</div>
 							<div class="clear"> </div>
 					   </div>
@@ -306,7 +309,7 @@
 								<span> </span>
 							</div>
 							<div class="recent-tweet-info">
-								<p>Ds which don't look even slightly believable. If you are <a href="#">going to use nibh euismod</a> tincidunt ut laoreet adipisicing</p>
+								<p>如果你想了解更多关于山庄跆拳道社团的各类动态，请点击<a href="https://weibo.com/">山庄跆拳道微博</a> 山庄跆拳道欢迎您</p>
 							</div>
 							<div class="clear"> </div>
 					  </div>
@@ -317,25 +320,25 @@
 			 <div class="col_1_of_f_1 span_1_of_f_1">
 			   <div class="section group example">
 				 <div class="col_1_of_f_2 span_1_of_f_2">
-				    <h3>Information</h3>
+				    <h3>友情链接</h3>
 						<ul class="f-list1">
-						    <li><a href="#">Duis autem vel eum iriure </a></li>
-				            <li><a href="#">anteposuerit litterarum formas </a></li>
-				            <li><a href="#">Tduis dolore te feugait nulla</a></li>
-				             <li><a href="#">Duis autem vel eum iriure </a></li>
-				            <li><a href="#">anteposuerit litterarum formas </a></li>
-				            <li><a href="#">Tduis dolore te feugait nulla</a></li>
+						    <li><a href="http://www.chntkd.org.cn/">中国跆拳道协会</a></li>
+				            <li><a href="http://www.chntkd.org.cn/">河北跆拳道协会</a></li>
+				            <li><a href="http://www.chntkd.org.cn/">山东跆拳道协会</a></li>
+				             <li><a href="http://www.chntkd.org.cn/">北京跆拳道协会</a></li>
+				            <li><a href="http://www.chntkd.org.cn/">天津跆拳道协会</a></li>
+				            <li><a href="http://www.chntkd.org.cn/">跆拳道协会</a></li>
 			         	</ul>
  				 </div>
 				 <div class="col_1_of_f_2 span_1_of_f_2">
-				   <h3>Contact us</h3>
+				   <h3>联系我们</h3>
 						<div class="company_address">
-					                <p>500 Lorem Ipsum Dolor Sit,</p>
-							   		<p>22-56-2-9 Sit Amet, Lorem,</p>
-							   		<p>USA</p>
-					   		<p>Phone:(00) 222 666 444</p>
-					   		<p>Fax: (000) 000 00 00 0</p>
-					 	 	<p>Email: <span>mail[at]leoshop.com</span></p>
+					                <p>河北省承德市</p>
+							   		<p>承德市，双桥区，河北民族师范学院</p>
+							   		<p>中国</p>
+					   		<p>Phone:(0014) 222 666 444</p>
+					   		<p>Fax: (0314) 000 00 00 0</p>
+					 	 	<p>Email: <span>shanzhuangtaiquandao@nicai.com</span></p>
 					   		
 					   </div>
 					   <div class="social-media">
@@ -357,14 +360,14 @@
 		<div class="footer-bottom">
 			<div class="wrap">
 	             <div class="copy">
-			        <p>Copyright &copy; 2014.Company name All rights reserved.<a href='http://www.hbun.net' title='静态网页模板'>HBUN</a></p>
+			        <p>Copyright &copy; 2018.洋²艳鼎旭 All rights reserved.<a href='http://www.hbun.net' title='HOME'>HBUN</a></p>
 		         </div>
 				<div class="f-list2">
 				 <ul>
-					<li class="active"><a href="about.html">About Us</a></li> |
-					<li><a href="delivery.html">Delivery & Returns</a></li> |
-					<li><a href="delivery.html">Terms & Conditions</a></li> |
-					<li><a href="contact.html">Contact Us</a></li> 
+					<li class="active"><a href="<?php echo U('Index/about');?>">关于我们</a></li> |
+					<li><a href="<?php echo U('Index/about');?>">Delivery & Returns</a></li> |
+					<li><a href="<?php echo U('Index/about');?>">Terms & Conditions</a></li> |
+					<li><a href="<?php echo U('Index/about');?>">联系我们</a></li> 
 				 </ul>
 			    </div>
 			    <div class="clear"></div>

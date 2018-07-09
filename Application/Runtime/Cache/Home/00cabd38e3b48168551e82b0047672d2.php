@@ -4,17 +4,17 @@
     <title>List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link href="/taiquandao/Public/Home/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/Public/Home/css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'> -->
-    <script type="text/javascript" src="/taiquandao/Public/Home/js/jquery1.min.js"></script>
+    <script type="text/javascript" src="/Public/Home/js/jquery1.min.js"></script>
     <!-- start menu -->
-    <link href="/taiquandao/Public/Home/css/megamenu.css" rel="stylesheet" type="text/css" media="all"/>
-    <script type="text/javascript" src="/taiquandao/Public/Home/js/megamenu.js"></script>
+    <link href="/Public/Home/css/megamenu.css" rel="stylesheet" type="text/css" media="all"/>
+    <script type="text/javascript" src="/Public/Home/js/megamenu.js"></script>
     <script>$(document).ready(function () {
       $(".megamenu").megamenu();
     });</script>
     <!-- dropdown -->
-    <script src="/taiquandao/Public/Home/js/jquery.easydropdown.js"></script>
+    <script src="/Public/Home/js/jquery.easydropdown.js"></script>
 </head>
 <body>
 <div class="header-top">
@@ -44,7 +44,7 @@
     <div class="wrap">
         <div class="header-bottom-left">
             <div class="logo">
-                <a href="index.html"><img src="/taiquandao/Public/Home/images/logo.png" alt=""/></a>
+                <a href="index.html"><img src="/Public/Home/images/logo.png" alt=""/></a>
             </div>
             <div class="menu">
                 <ul class="megamenu skyblue">

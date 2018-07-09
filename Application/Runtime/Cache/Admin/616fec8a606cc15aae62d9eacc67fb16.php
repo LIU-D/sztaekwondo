@@ -10,16 +10,16 @@
 <link rel="Bookmark" href="/favicon.ico" >
 <link rel="Shortcut Icon" href="/favicon.ico" />
 <!--[if lt IE 9]>
-<script type="text/javascript" src="/taiquandao/Public/Admin/lib/html5shiv.js"></script>
-<script type="text/javascript" src="/taiquandao/Public/Admin/lib/respond.min.js"></script>
+<script type="text/javascript" src="/sztaekwondo/Public/Admin/lib/html5shiv.js"></script>
+<script type="text/javascript" src="/sztaekwondo/Public/Admin/lib/respond.min.js"></script>
 <![endif]-->
-<link rel="stylesheet" type="text/css" href="/taiquandao/Public/Admin/static/h-ui/css/H-ui.min.css" />
-<link rel="stylesheet" type="text/css" href="/taiquandao/Public/Admin/static/h-ui.admin/css/H-ui.admin.css" />
-<link rel="stylesheet" type="text/css" href="/taiquandao/Public/Admin/lib/Hui-iconfont/1.0.8/iconfont.css" />
-<link rel="stylesheet" type="text/css" href="/taiquandao/Public/Admin/static/h-ui.admin/skin/default/skin.css" id="skin" />
-<link rel="stylesheet" type="text/css" href="/taiquandao/Public/Admin/static/h-ui.admin/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/sztaekwondo/Public/Admin/static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="/sztaekwondo/Public/Admin/static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="/sztaekwondo/Public/Admin/lib/Hui-iconfont/1.0.8/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="/sztaekwondo/Public/Admin/static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="/sztaekwondo/Public/Admin/static/h-ui.admin/css/style.css" />
 <!--[if IE 6]>
-<script type="text/javascript" src="/taiquandao/Public/Admin/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script type="text/javascript" src="/sztaekwondo/Public/Admin/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
 <![endif]-->
 <!--/meta 作为公共模版分离出去-->
@@ -53,11 +53,11 @@
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">文章内容：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<link href="/taiquandao/Public/Admin/lib/umeditor/themes/default/css/umeditor.min.css" rel="stylesheet" />
-				<script src="/taiquandao/Public/Admin/lib/umeditor/third-party/jquery.min.js"></script>
-				<script src="/taiquandao/Public/Admin/lib/umeditor/umeditor.min.js"></script>
-				<script src="/taiquandao/Public/Admin/lib/umeditor/umeditor.config.js"></script>
-				<script src="/taiquandao/Public/Admin/lib/umeditor/lang/zh-cn/zh-cn.js"></script>
+				<link href="/sztaekwondo/Public/Admin/lib/umeditor/themes/default/css/umeditor.min.css" rel="stylesheet" />
+				<script src="/sztaekwondo/Public/Admin/lib/umeditor/third-party/jquery.min.js"></script>
+				<script src="/sztaekwondo/Public/Admin/lib/umeditor/umeditor.min.js"></script>
+				<script src="/sztaekwondo/Public/Admin/lib/umeditor/umeditor.config.js"></script>
+				<script src="/sztaekwondo/Public/Admin/lib/umeditor/lang/zh-cn/zh-cn.js"></script>
 				<script>
 					$(function(){
 						UM.getEditor('myEditor');
@@ -79,21 +79,21 @@
 	</form>
 </article>
 <!--_footer 作为公共模版分离出去-->
-<script type="text/javascript" src="/taiquandao/Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="/taiquandao/Public/Admin/lib/layer/2.4/layer.js"></script>
-<script type="text/javascript" src="/taiquandao/Public/Admin/static/h-ui/js/H-ui.min.js"></script> 
-<script type="text/javascript" src="/taiquandao/Public/Admin/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer /作为公共模版分离出去-->
+<script type="text/javascript" src="/sztaekwondo/Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/sztaekwondo/Public/Admin/lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="/sztaekwondo/Public/Admin/static/h-ui/js/H-ui.min.js"></script> 
+<script type="text/javascript" src="/sztaekwondo/Public/Admin/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer /作为公共模版分离出去-->
 
 
 <!--请在下方写此页面业务相关的脚本-->
-<!-- <script type="text/javascript" src="/taiquandao/Public/Admin/lib/My97DatePicker/4.8/WdatePicker.js"></script>
-<script type="text/javascript" src="/taiquandao/Public/Admin/lib/jquery.validation/1.14.0/jquery.validate.js"></script> 
-<script type="text/javascript" src="/taiquandao/Public/Admin/lib/jquery.validation/1.14.0/validate-methods.js"></script> 
-<script type="text/javascript" src="/taiquandao/Public/Admin/lib/jquery.validation/1.14.0/messages_zh.js"></script>
-<script type="text/javascript" src="/taiquandao/Public/Admin/lib/webuploader/0.1.5/webuploader.min.js"></script> 
-<script type="text/javascript" src="/taiquandao/Public/Admin/lib/ueditor/1.4.3/ueditor.config.js"></script> 
-<script type="text/javascript" src="/taiquandao/Public/Admin/lib/ueditor/1.4.3/ueditor.all.min.js"> </script> 
-<script type="text/javascript" src="/taiquandao/Public/Admin/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+<!-- <script type="text/javascript" src="/sztaekwondo/Public/Admin/lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="/sztaekwondo/Public/Admin/lib/jquery.validation/1.14.0/jquery.validate.js"></script> 
+<script type="text/javascript" src="/sztaekwondo/Public/Admin/lib/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="/sztaekwondo/Public/Admin/lib/jquery.validation/1.14.0/messages_zh.js"></script>
+<script type="text/javascript" src="/sztaekwondo/Public/Admin/lib/webuploader/0.1.5/webuploader.min.js"></script> 
+<script type="text/javascript" src="/sztaekwondo/Public/Admin/lib/ueditor/1.4.3/ueditor.config.js"></script> 
+<script type="text/javascript" src="/sztaekwondo/Public/Admin/lib/ueditor/1.4.3/ueditor.all.min.js"> </script> 
+<script type="text/javascript" src="/sztaekwondo/Public/Admin/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
 <script type="text/javascript">
 $(function(){
 	$('.skin-minimal input').iCheck({
@@ -161,7 +161,7 @@ $(function(){
 
 	var uploader = WebUploader.create({
 		auto: true,
-		swf: '/taiquandao/Public/Admin/lib/webuploader/0.1.5/Uploader.swf',
+		swf: '/sztaekwondo/Public/Admin/lib/webuploader/0.1.5/Uploader.swf',
 	
 		// 文件接收服务端。
 		server: 'fileupload.php',
