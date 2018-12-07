@@ -1,0 +1,341 @@
+[ 2018-11-15T20:09:48+08:00 ] ::1 /sztaekwondo/index.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001178s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000941s ]
+
+[ 2018-11-15T20:09:48+08:00 ] ::1 /sztaekwondo/index.php/Admin/Index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001464s ]
+
+[ 2018-11-15T20:09:53+08:00 ] ::1 /sztaekwondo/index.php/Admin/Index/check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `sz_users` [ RunTime:0.0511s ]
+SQL: SELECT * FROM `sz_users` WHERE ( user_name='root' and user_pwd='449fddaaadf1a17861709888d6d0d663' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000571s ]
+
+[ 2018-11-15T20:09:55+08:00 ] ::1 /sztaekwondo/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000973s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001009s ]
+
+[ 2018-11-15T20:09:55+08:00 ] ::1 /sztaekwondo/index.php/Admin/Index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001088s ]
+
+[ 2018-11-15T20:10:04+08:00 ] ::1 /sztaekwondo/index.php/Admin/Index/check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001538s ]
+SQL: SHOW COLUMNS FROM `sz_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sz_users` WHERE ( user_name='root' and user_pwd='63a9f0ea7bb98050796b649e85481845' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013931s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000823s ]
+
+[ 2018-11-15T20:10:07+08:00 ] ::1 /sztaekwondo/index.php/Admin/Main/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001208s ]
+
+[ 2018-11-15T20:10:08+08:00 ] ::1 /sztaekwondo/index.php/Admin/Main/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000830s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000866s ]
+
+[ 2018-11-15T20:10:22+08:00 ] ::1 /sztaekwondo/index.php/Admin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+SQL: SHOW COLUMNS FROM `sz_article` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sz_article`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 61 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 68 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 71 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 65 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 68 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 71 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 61 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 68 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 71 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 61 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 68 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 71 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 61 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 68 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 71 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 61 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 68 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092819s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003381s ]
+
+[ 2018-11-15T20:10:25+08:00 ] ::1 /sztaekwondo/index.php/Admin/Image/listSlide.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+SQL: SHOW COLUMNS FROM `sz_image` [ RunTime:0.0008s ]
+SQL: SELECT `img_id`,`type_name`,`img_small_logo`,`img_title`,`img_isdel`,`img_pubtime`,`img_addtime` FROM sz_image img INNER JOIN sz_imgtype t on img.img_typeid = type_id  WHERE ( img_typeid = 1 )  [ RunTime:0.0223s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\16c20bbbf8fb2c5e805bbd80eaf260cd.php 第 61 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\16c20bbbf8fb2c5e805bbd80eaf260cd.php 第 72 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\16c20bbbf8fb2c5e805bbd80eaf260cd.php 第 61 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\16c20bbbf8fb2c5e805bbd80eaf260cd.php 第 72 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\16c20bbbf8fb2c5e805bbd80eaf260cd.php 第 61 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\16c20bbbf8fb2c5e805bbd80eaf260cd.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001180s ]
+
+[ 2018-11-15T20:10:28+08:00 ] ::1 /sztaekwondo/index.php/Admin/Image/listShowbox.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `sz_image` [ RunTime:0.0008s ]
+SQL: SELECT `img_id`,`type_name`,`img_small_logo`,`img_title`,`img_isdel`,`img_pubtime`,`img_addtime` FROM sz_image img INNER JOIN sz_imgtype t on img.img_typeid = type_id  WHERE ( img_typeid = 2 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\c6e18b610a424d1b85d2dbd5deba89d1.php 第 61 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\c6e18b610a424d1b85d2dbd5deba89d1.php 第 72 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\c6e18b610a424d1b85d2dbd5deba89d1.php 第 61 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\c6e18b610a424d1b85d2dbd5deba89d1.php 第 72 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\c6e18b610a424d1b85d2dbd5deba89d1.php 第 61 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\c6e18b610a424d1b85d2dbd5deba89d1.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091942s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001119s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001174s ]
+
+[ 2018-11-15T20:10:30+08:00 ] ::1 /sztaekwondo/index.php/Admin/Image/listShowbox.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `sz_image` [ RunTime:0.0008s ]
+SQL: SELECT `img_id`,`type_name`,`img_small_logo`,`img_title`,`img_isdel`,`img_pubtime`,`img_addtime` FROM sz_image img INNER JOIN sz_imgtype t on img.img_typeid = type_id  WHERE ( img_typeid = 2 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\c6e18b610a424d1b85d2dbd5deba89d1.php 第 61 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\c6e18b610a424d1b85d2dbd5deba89d1.php 第 72 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\c6e18b610a424d1b85d2dbd5deba89d1.php 第 61 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\c6e18b610a424d1b85d2dbd5deba89d1.php 第 72 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\c6e18b610a424d1b85d2dbd5deba89d1.php 第 61 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\c6e18b610a424d1b85d2dbd5deba89d1.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053567s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000998s ]
+
+[ 2018-11-15T20:10:31+08:00 ] ::1 /sztaekwondo/index.php/Admin/Image/listMember.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001313s ]
+SQL: SHOW COLUMNS FROM `sz_image` [ RunTime:0.0008s ]
+SQL: SELECT `img_id`,`type_name`,`img_small_logo`,`img_title`,`img_isdel`,`img_pubtime`,`img_addtime` FROM sz_image img INNER JOIN sz_imgtype t on img.img_typeid = type_id  WHERE ( img_typeid = 3 )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\0e4ead0f8a0c4a06f70904f470582b47.php 第 61 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\0e4ead0f8a0c4a06f70904f470582b47.php 第 72 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\0e4ead0f8a0c4a06f70904f470582b47.php 第 65 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\0e4ead0f8a0c4a06f70904f470582b47.php 第 72 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\0e4ead0f8a0c4a06f70904f470582b47.php 第 61 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\0e4ead0f8a0c4a06f70904f470582b47.php 第 72 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\0e4ead0f8a0c4a06f70904f470582b47.php 第 65 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\0e4ead0f8a0c4a06f70904f470582b47.php 第 72 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\0e4ead0f8a0c4a06f70904f470582b47.php 第 65 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\0e4ead0f8a0c4a06f70904f470582b47.php 第 72 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\0e4ead0f8a0c4a06f70904f470582b47.php 第 61 行.
+NOTIC: [8] Use of undefined constant img_id - assumed 'img_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\0e4ead0f8a0c4a06f70904f470582b47.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083680s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001111s ]
+
+[ 2018-11-15T20:10:46+08:00 ] ::1 /sztaekwondo/index.php/Admin/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+SQL: SHOW COLUMNS FROM `sz_article` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sz_article`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 61 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 68 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 71 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 65 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 68 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 71 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 61 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 68 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 71 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 61 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 68 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 71 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 61 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 68 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 71 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 61 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 68 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\Software\phpstudy\PHPTutorial\WWW\sztaekwondo\Application\Runtime\Cache\Admin\7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001350s ]
+

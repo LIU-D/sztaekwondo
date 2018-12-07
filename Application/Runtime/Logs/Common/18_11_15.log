@@ -1,0 +1,54 @@
+[ 2018-11-15T20:06:52+08:00 ] ::1 /sztaekwondo/Public/Home/css/loading.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+ERR: 无法加载模块:Public
+
+[ 2018-11-15T20:06:55+08:00 ] ::1 /sztaekwondo/Public/Home/images/l-r-arrows.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001379s ]
+ERR: 无法加载模块:Public
+
+[ 2018-11-15T20:06:56+08:00 ] ::1 /sztaekwondo/Public/Home/css/loading.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+ERR: 无法加载模块:Public
+
+[ 2018-11-15T20:06:56+08:00 ] ::1 /sztaekwondo/Public/Home/images/l-r-arrows.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+ERR: 无法加载模块:Public
+
+[ 2018-11-15T20:09:47+08:00 ] ::1 /sztaekwondo/Public/Home/css/loading.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+ERR: 无法加载模块:Public
+
+[ 2018-11-15T20:10:08+08:00 ] ::1 /sztaekwondo/Public/Admin/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+ERR: 无法加载模块:Public
+
+[ 2018-11-15T20:10:31+08:00 ] ::1 /sztaekwondo./Upload/2018-07-07/thumb_5b40558b0844e.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000127s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001368s ]
+ERR: 无法加载模块:Upload
+
+[ 2018-11-15T20:10:31+08:00 ] ::1 /sztaekwondo./Upload/2018-07-07/thumb_5b40565139dfe.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+ERR: 无法加载模块:Upload
+
+[ 2018-11-15T20:10:31+08:00 ] ::1 /sztaekwondo./Upload/2018-07-07/thumb_5b4055a685e03.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+ERR: 无法加载模块:Upload
+
